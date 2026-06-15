@@ -68,7 +68,18 @@ const Contact = () => {
 
         {/* FORM: */}
         <div className="md:col-span-7">
-          <form className="space-y-4 font-sans">
+          <form
+            action="https://formsubmit.co/leonardo.duartecosta@outlook.com"
+            method="POST"
+            className="space-y-4 font-sans"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Contact"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* FIRST NAME FIELD: */}
               <div className="flex flex-col space-y-1">
@@ -76,7 +87,9 @@ const Contact = () => {
                   {t("labelFirstName")}
                 </label>
                 <input
+                  name="firstName"
                   type="text"
+                  required
                   placeholder={t("placeholderFirstName")}
                   className="w-full px-4 py-2.5 sm:py-3 bg-zinc-50 dark:bg-zinc-900 border-b border-black dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-300 text-sm sm:text-base"
                 />
@@ -88,6 +101,7 @@ const Contact = () => {
                   {t("labelLastName")}
                 </label>
                 <input
+                  name="lastName"
                   type="text"
                   placeholder={t("placeholderLastName")}
                   className="w-full px-4 py-2.5 sm:py-3 bg-zinc-50 dark:bg-zinc-900 border-b border-black dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-300 text-sm sm:text-base"
@@ -100,7 +114,9 @@ const Contact = () => {
                   Email
                 </label>
                 <input
+                  name="email"
                   type="email"
+                  required
                   placeholder="yourmail@email.com"
                   className="w-full px-4 py-2.5 sm:py-3 bg-zinc-50 dark:bg-zinc-900 border-b border-black dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-300 text-sm sm:text-base"
                 />
@@ -112,6 +128,7 @@ const Contact = () => {
                   {t("labelPhone")}
                 </label>
                 <input
+                  name="phone"
                   type="text"
                   placeholder="+1 (123) 123-4567"
                   className="w-full px-4 py-2.5 sm:py-3 bg-zinc-50 dark:bg-zinc-900 border-b border-black dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-300 text-sm sm:text-base"
@@ -125,6 +142,8 @@ const Contact = () => {
                 {t("labelMessage")}
               </label>
               <textarea
+                name="message"
+                required
                 rows={4}
                 placeholder={t("placeholderMessage")}
                 className="w-full px-4 py-2.5 sm:py-3 bg-zinc-50 dark:bg-zinc-900 border-b border-black dark:border-zinc-700 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors duration-300 resize-none text-sm sm:text-base"
