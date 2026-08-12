@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.3.0",
+    "aos": "^2.3.4",
     "i18next": "^26.2.0",
     "i18next-browser-languagedetector": "^8.2.1",
     "react": "^19.2.5",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/aos": "^3.0.8",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

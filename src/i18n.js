@@ -11,11 +11,12 @@ const resources = {
       projects: "Projetos",
       about: "Sobre",
       contact: "Contato",
+      ai: "IA",
 
       // Main Section
       welcome: "Olá, eu sou o",
       description:
-        "Sou um desenvolvedor full-stack estudando na CICCC <1>Cornerstone International Community College of Canada</1>, localizada em Vancouver, Colúmbia Britânica. Meu foco é construir aplicações web modernas, fluidas e visualmente limpas. Combino uma lógica de back-end sólida com interfaces de front-end intuitivas para transformar ideias em experiências digitais eficazes.",
+        "Sou um desenvolvedor full-stack estudando na CICCC <1>Cornerstone International Community College of Canada</1>, localizada em Vancouver, Colúmbia Britânica. <br><br> Meu foco é construir aplicações web modernas, fluidas e visualmente limpas. Combino uma lógica de back-end sólida com interfaces de front-end intuitivas para transformar ideias em experiências digitais eficazes.",
       viewProjects: "Ver Meus Projetos",
       downloadCv: "Baixar CV",
       devTitle: "Desenvolvedor FullStack",
@@ -26,7 +27,7 @@ const resources = {
       aboutSubtitle:
         "Desenvolvedor Full-Stack focado em criar experiências digitais fluidas e bem estruturadas.",
       aboutBio1:
-        "Meu nome é <1>Leonardo Costa</1>. Sou estudante de Desenvolvimento Web na CICCC <br /><3>Cornerstone International Community College of Canada</3>, em Vancouver, BC.",
+        "Meu nome é <1>Leonardo Costa</1>. Sou estudante de Desenvolvimento Web na CICCC <3>Cornerstone International Community College of Canada</3>, em Vancouver, BC.",
       aboutBio2:
         "Meu objetivo é me tornar um Desenvolvedor FullStack, trabalhando desde a lógica de back-end até interfaces de usuário responsivas e experiências front-end interativas. Também gosto de usar o Figma e o Stitch para projetar minhas interfaces antes de dar vida a elas através do código.",
       aboutBio3:
@@ -38,7 +39,7 @@ const resources = {
       labelDatabases: "Bancos de Dados",
       labelDesign: "Design",
 
-      // About Section
+      // Skills Section
       skillsMe: "Minhas",
       skillsTitle: ".Habilidades",
 
@@ -51,6 +52,52 @@ const resources = {
         "Um e-commerce especializado em chuteiras de alto desempenho. Possui opções de filtragem avançada, gerenciamento de dados e design responsivo.",
       project_3_desc:
         "Uma aplicação full-stack com banco de dados estruturado que permite escolher seus times favoritos e simular cada partida da Copa do Mundo da FIFA 2026 para prever o campeão.",
+
+      // AiChat Section
+      "aiChat.title": "Assistente",
+      "aiChat.subtitle": ".IA",
+      "aiChat.heading": "Assistente IA",
+      "aiChat.description":
+        "Converse com Pepita, a IA do portfólio para tirar dúvidas rápidas sobre a carreira, habilidades e projetos.",
+      "aiChat.chatHeader": "Pepita IA",
+      "aiChat.placeholder": "Pergunte algo sobre o Léo...",
+      "aiChat.thinking": "Pensando...",
+      "aiChat.welcome":
+        "Olá! Sou a Pepita, a assistente virtual do Leonardo Costa. Quer saber mais sobre os projetos dele, tecnologias ou sobre a vida pessoal? Pode perguntar!",
+      "aiChat.responseStudy":
+        "O Léo estuda Web Development no Cornerstone Community College, em Vancouver, Canadá! A previsão de formatura é agosto de 2027.",
+      "aiChat.responseTech":
+        "Ele domina o ecossistema Full-Stack: React, Next.js, TypeScript, Node.js, Express, PostgreSQL, MongoDB, Tailwind CSS, entre outras!",
+      "aiChat.responseProject":
+        "Os principais destaques dele são o CostaFlix, a GD Store e o Simulador da Copa do Mundo 2026. Todos estão na seção de projetos aqui do portfólio!",
+      "aiChat.responseContact":
+        "Você pode mandar uma mensagem pelo formulário no final da página ou direto no e-mail: leonardo.duartecosta@outlook.com!",
+      "aiChat.responseAge": "O Léo tem 22 anos!",
+      "aiChat.responseTeam": "O Léo é torcedor apaixonado do Santos! 🤍🖤",
+      "aiChat.responseGame": "Ele ama jogar Counter-Strike com os amigos! 🔫",
+      "aiChat.responseGirlfriend": "Ele namora a Larissa! ❤️",
+      "aiChat.responseBirth":
+        "Ele nasceu em Pindamonhangaba-SP, mas morou a vida toda em Tremembé-SP, e hoje mora em Vancouver, Canadá.",
+      "aiChat.responseFreeTime":
+        "No tempo livre, ele gosta de jogar videogame com os amigos e jogar futebol.",
+      "aiChat.responseDream":
+        "O grande sonho dele para o futuro é conseguir unir suas duas paixões: trabalhar com tecnologia e futebol!",
+      "aiChat.responseWork":
+        "Antes de focar 100% em desenvolvimento web, o Léo trabalhou como Assessor de Vendas na Advantage Solutions, Secretário em um escritório de advocacia e foi Estagiário de TI na Cade Guincho Tech!",
+      "aiChat.responseOtherGames":
+        "Além do Counter-Strike (que é o favorito), ele também curte muito jogar Minecraft e Call of Duty com os amigos!",
+      "aiChat.responseDesignTools":
+        "Sim! Ele gosta muito de usar o Figma e o Stitch para planejar e desenhar as interfaces antes de começar a codar.",
+      "aiChat.responseMotivation":
+        "O que mais motiva o Léo é transformar ideias criativas em realidade através de código limpo, criando experiências digitais que realmente funcionam e encantam os usuários.",
+      "aiChat.responseWhoAreYou":
+        "Eu sou a Pepita, a assistente virtual e melhor amiga do Leonardo!",
+      "aiChat.responseTech":
+        "Ele domina o ecossistema Full-Stack: React, Next.js, TypeScript, Node.js, Express, PostgreSQL, MongoDB, Tailwind CSS, entre outras!",
+      "aiChat.responseInspiration":
+        "Depois que a minha cachorrinha partiu, eu quis encontrar uma forma significativa de honrar a memória dela, eternizando sua presença e companhia sempre comigo.",
+      "aiChat.responseDefault":
+        "Desculpe, ainda não sou capaz de responder essa pergunta. Tente novamente mais tarde ou entre em contato diretamente com o Léo!",
 
       // Contact Section
       contactTitle: "Meu",
@@ -77,11 +124,12 @@ const resources = {
       projects: "Projects",
       about: "About",
       contact: "Contact",
+      ai: "AI",
 
       // Main Section
       welcome: "Hi, I am",
       description:
-        "I'm a full-stack developer currently studying at CICCC <1>Cornerstone International Community College of Canada</1>, located in Vancouver, British Columbia. I focus on building modern, fluid, and visually clean web applications. I combine solid back-end logic with intuitive front-end interfaces to turn ideas into effective digital experiences.",
+        "I'm a full-stack developer currently studying at CICCC <1>Cornerstone International Community College of Canada</1>, located in Vancouver, British Columbia. <br><br> I focus on building modern, fluid, and visually clean web applications. I combine solid back-end logic with intuitive front-end interfaces to turn ideas into effective digital experiences.",
       viewProjects: "View My Projects",
       downloadCv: "Download CV",
       devTitle: "FullStack Developer",
@@ -92,7 +140,7 @@ const resources = {
       aboutSubtitle:
         "Full-Stack Developer focused on creating fluid and well-structured digital experiences.",
       aboutBio1:
-        "My name is <1>Leonardo Costa</1>. I'm a Web Development student at CICCC <br /><3>Cornerstone International Community College of Canada</3>, in Vancouver, BC.",
+        "My name is <1>Leonardo Costa</1>. I'm a Web Development student at <3>Cornerstone International Community College of Canada</3>, in Vancouver, BC.",
       aboutBio2:
         "My goal is to become a FullStack Developer, working on backend logic to responsive user interfaces and interactive front-end experiences. I also enjoy using Figma and Stitch to design my interfaces before bringing them to life through code.",
       aboutBio3:
@@ -118,9 +166,56 @@ const resources = {
       project_3_desc:
         "A full-stack application with a structured database that lets you pick your favorite teams and simulate every match of the 2026 FIFA World Cup to predict the champion.",
 
+      // AiChat Section
+      "aiChat.title": "AI",
+      "aiChat.subtitle": ".Assistant",
+      "aiChat.heading": "AI Assistant",
+      "aiChat.description":
+        "Chat with Pepita, portfolio's AI to quickly answer questions about career, skills, and projects.",
+      "aiChat.chatHeader": "Pepita AI",
+      "aiChat.placeholder": "Ask something about Leo...",
+      "aiChat.thinking": "Thinking...",
+      "aiChat.welcome":
+        "Hello! I am Pepita, Leonardo Costa's virtual assistant. Want to know more about his projects, technologies, or personal life? Feel free to ask!",
+      "aiChat.responseStudy":
+        "Leo studies Web Development at Cornerstone Community College in Vancouver, Canada! Expected graduation is August 2027.",
+      "aiChat.responseTech":
+        "He masters the Full-Stack ecosystem: React, Next.js, TypeScript, Node.js, Express, PostgreSQL, MongoDB, Tailwind CSS, and more!",
+      "aiChat.responseProject":
+        "His main highlights are CostaFlix, GD Store, and the 2026 FIFA World Cup Simulator. They are all in the projects section here on the portfolio!",
+      "aiChat.responseContact":
+        "You can send a message using the form at the bottom of the page or directly via email: leonardo.duartecosta@outlook.com!",
+      "aiChat.responseAge": "Leo is 22 years old!",
+      "aiChat.responseTeam": "Leo is a passionate supporter of Santos! 🤍🖤",
+      "aiChat.responseGame":
+        "He loves playing Counter-Strike with his friends! 🔫",
+      "aiChat.responseGirlfriend": "He is in a relationship with Larissa! ❤️",
+      "aiChat.responseBirth":
+        "He was born in Pindamonhangaba-SP, but lived his whole life in Tremembé-SP, and now lives in Vancouver, Canada.",
+      "aiChat.responseFreeTime":
+        "In his free time, he enjoys playing video games with friends and playing soccer.",
+      "aiChat.responseDream":
+        "His biggest dream for the future is to work combining his two greatest passions: technology and soccer!",
+      "aiChat.responseWork":
+        "Before focusing 100% on web development, Leo worked as a Sales Advisor at Advantage Solutions, a Secretary at a law office, and an IT Intern at Cade Guincho Tech!",
+      "aiChat.responseOtherGames":
+        "Besides Counter-Strike (which is his favorite), he also really enjoys playing Minecraft and Call of Duty with his friends!",
+      "aiChat.responseDesignTools":
+        "Yes! He loves using Figma and Stitch to plan and design his interfaces before writing any code.",
+      "aiChat.responseMotivation":
+        "What motivates Leo the most is turning creative ideas into reality through clean code, creating digital experiences that truly work and delight users.",
+      "aiChat.responseWhoAreYou":
+        "I'm Pepita, Leonardo's virtual assistant and best friend!",
+      "aiChat.responseTech":
+        "He masters the Full-Stack ecosystem: React, Next.js, TypeScript, Node.js, Express, PostgreSQL, MongoDB, Tailwind CSS, and more!",
+      "aiChat.responseInspiration":
+        "After my little dog passed away, I wanted to find a meaningful way to honor her memory, immortalizing her presence and companionship by my side forever.",
+      "aiChat.responseDefault":
+        "Sorry, I am not yet able to answer this question. Please try again later or contact Leo directly!",
+
       // Contact Section
       contactTitle: "Contact",
-      contactMe: ".Me",
+      contactName: ".Me",
       contactSubtitle:
         "Do you have a project in mind or would you like to discuss technology or soccer?",
       contactBio:

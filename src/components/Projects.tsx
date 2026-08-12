@@ -42,27 +42,36 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-12 md:py-20 bg-transparent text-zinc-900 dark:text-zinc-100 transition-colors duration-300 flex flex-col items-center justify-center"
+      className="w-full py-10 md:py-20 bg-transparent text-zinc-900 dark:text-zinc-100 transition-colors duration-300 flex flex-col items-center justify-center"
     >
-      <div className="w-full max-w-6xl px-4 sm:px-6 md:px-12 flex justify-center mb-10 md:mb-14">
+      <div
+        data-aos="fade-down"
+        className="w-full max-w-6xl px-4 sm:px-6 md:px-12 flex justify-center mb-8 md:mb-14"
+      >
         <div className="flex flex-col items-center text-center w-full">
-          <h2 className="font-michroma text-lg xs:text-2xl sm:text-3xl md:text-4xl tracking-wider text-zinc-900 dark:text-zinc-100 leading-none whitespace-nowrap">
+          <h2 className="font-michroma text-xl sm:text-3xl md:text-4xl tracking-wider text-zinc-900 dark:text-zinc-100 leading-tight">
             <span className="text-blue-500 dark:text-blue-400">
-              {t("projectsTitle")}
+              {t("projectsTitle")}{" "}
             </span>
             {t("projectsSubtitle")}
           </h2>
-          <div className="h-1 w-20 sm:w-36 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded mt-4 md:mt-6"></div>
+          <div className="h-1 w-20 sm:w-36 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded mt-3 md:mt-6"></div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full max-w-6xl mx-auto px-4 sm:px-6">
-        {projectsData.map((project) => (
+      <div
+        data-aos="fade-up"
+        data-aos-delay="150"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full max-w-6xl mx-auto px-4 sm:px-6"
+      >
+        {projectsData.map((project, index) => (
           <div
             key={project.id}
+            data-aos="fade-up"
+            data-aos-delay={200 + index * 100}
             className="group flex flex-col rounded-2xl bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/60 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
           >
-            <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden bg-zinc-200 dark:bg-zinc-800 shrink-0">
+            <div className="relative w-full h-44 sm:h-56 md:h-64 overflow-hidden bg-zinc-200 dark:bg-zinc-800 shrink-0">
               <img
                 src={project.image}
                 alt={project.title}
@@ -91,22 +100,23 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="p-5 flex flex-col flex-1 justify-between gap-4">
+            <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between gap-4">
               <div>
-                <h3 className="text-lg sm:text-xl font-bold tracking-wide text-zinc-800 dark:text-zinc-100">
+                <h3 className="text-base sm:text-xl font-bold tracking-wide text-zinc-800 dark:text-zinc-100">
                   {project.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-2 leading-relaxed text-justify sm:text-left">
+                <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1.5 sm:mt-2 leading-relaxed text-center sm:text-left">
                   {t(project.descKey)}
                 </p>
               </div>
 
-              <div className="flex items-center gap-3 pt-2 md:hidden w-full border-t border-zinc-200/60 dark:border-zinc-800/60">
+              {/* Buttons only in mobile */}
+              <div className="flex items-center gap-2.5 pt-3 md:hidden w-full border-t border-zinc-200/60 dark:border-zinc-800/60">
                 <a
                   href={project.siteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-98 transition-all"
+                  className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-98 transition-all"
                 >
                   <FiExternalLink /> Live Demo
                 </a>
@@ -115,7 +125,7 @@ const Projects = () => {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-xl bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-base flex items-center justify-center shadow-sm active:scale-98 transition-all"
+                  className="px-4 py-2.5 rounded-xl bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 text-sm flex items-center justify-center shadow-sm active:scale-98 transition-all"
                   title="View Code"
                 >
                   <LuGithub />
