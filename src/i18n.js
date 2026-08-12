@@ -215,7 +215,7 @@ const resources = {
 
       // Contact Section
       contactTitle: "Contact",
-      contactName: ".Me",
+      contactMe: ".Me",
       contactSubtitle:
         "Do you have a project in mind or would you like to discuss technology or soccer?",
       contactBio:
