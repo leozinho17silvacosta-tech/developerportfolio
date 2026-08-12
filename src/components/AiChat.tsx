@@ -275,12 +275,12 @@ const AiChat = () => {
   return (
     <section
       id="ai-chat"
-      className="w-full py-8 sm:py-12 px-3 sm:px-6 md:px-12 max-w-6xl mx-auto scroll-mt-24"
+      className="w-full py-8 sm:py-12 px-4 sm:px-6 md:px-12 max-w-6xl mx-auto scroll-mt-24 box-border overflow-hidden"
     >
       {/* TITLE */}
       <div
         data-aos="fade-down"
-        className="mb-8 md:mb-12 flex flex-col items-center justify-center text-center"
+        className="mb-8 md:mb-12 flex flex-col items-center justify-center text-center w-full"
       >
         <h2 className="font-michroma text-xl sm:text-3xl md:text-4xl tracking-wider text-zinc-900 dark:text-zinc-100 px-2">
           {t("aiChat.title")}{" "}
@@ -292,14 +292,14 @@ const AiChat = () => {
       </div>
 
       {/* Two-column container */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center w-full">
         {/* Left Column: Logo / Visual Identity */}
         <div
           data-aos="fade-right"
           data-aos-delay="150"
-          className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4"
+          className="lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 w-full"
         >
-          <div className="relative w-36 h-36 sm:w-48 sm:h-48 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shadow-lg p-2 group overflow-hidden">
+          <div className="relative w-36 h-36 sm:w-48 sm:h-48 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shadow-lg p-2 group overflow-hidden mx-auto lg:mx-0">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             <img
@@ -309,11 +309,11 @@ const AiChat = () => {
             />
           </div>
 
-          <div>
+          <div className="w-full flex flex-col items-center lg:items-start">
             <h3 className="font-michroma text-base sm:text-xl text-zinc-900 dark:text-zinc-100 tracking-wider">
               {t("aiChat.heading")}
             </h3>
-            <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-2 max-w-sm px-4 sm:px-0">
+            <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-2 max-w-sm px-4 lg:px-0 text-center lg:text-left">
               {t("aiChat.description")}
             </p>
           </div>

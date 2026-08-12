@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full py-10 md:py-20 px-4 sm:px-6 md:px-12 max-w-6xl mx-auto scroll-mt-24 overflow-hidden"
+      className="w-full py-10 md:py-20 px-4 sm:px-6 md:px-12 max-w-6xl mx-auto scroll-mt-24 overflow-hidden box-border"
     >
       {/* TITLE CONTAINER: */}
       <div
@@ -26,17 +26,17 @@ const Contact = () => {
               {t("contactMe")}
             </span>
           </h2>
-          <div className="h-1 w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded mt-3 md:mt-4"></div>
+          <div className="h-1 w-16 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded mt-3 md:mt-4 mx-auto md:mx-0"></div>
         </div>
       </div>
 
       {/* CARD CONTENT: */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 w-full">
         {/* TEXTS & PERSONAL INFO: */}
         <div
           data-aos="fade-right"
           data-aos-delay="150"
-          className="md:col-span-5 space-y-4 md:space-y-6 text-center md:text-left"
+          className="md:col-span-5 space-y-4 md:space-y-6 text-center md:text-left w-full flex flex-col items-center md:items-start"
         >
           <h3 className="font-aldrich text-base sm:text-xl md:text-2xl text-zinc-800 dark:text-zinc-200">
             {t("contactSubtitle")}
@@ -46,7 +46,7 @@ const Contact = () => {
           </p>
 
           {/* PERSONAL INFORMATIONS: */}
-          <div className="space-y-3 pt-2 font-sans text-xs sm:text-sm border-t border-zinc-200 dark:border-zinc-800 md:border-t-0 flex flex-col items-center md:items-start text-left">
+          <div className="space-y-3 pt-2 font-sans text-xs sm:text-sm border-t border-zinc-200 dark:border-zinc-800 md:border-t-0 flex flex-col items-center md:items-start text-left w-full">
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-1.5 sm:gap-3 w-full">
               <span className="text-blue-500 shrink-0">▹</span>
               <span className="text-zinc-500 dark:text-zinc-400 italic shrink-0">
@@ -82,7 +82,7 @@ const Contact = () => {
           <form
             action="https://formsubmit.co/leonardo.duartecosta@outlook.com"
             method="POST"
-            className="space-y-4 font-sans"
+            className="space-y-4 font-sans w-full"
           >
             <input
               type="hidden"
@@ -94,7 +94,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* FIRST NAME FIELD: */}
               <div className="flex flex-col space-y-1">
-                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider text-left">
                   {t("labelFirstName")}
                 </label>
                 <input
@@ -108,7 +108,7 @@ const Contact = () => {
 
               {/* LAST NAME FIELD: */}
               <div className="flex flex-col space-y-1">
-                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider text-left">
                   {t("labelLastName")}
                 </label>
                 <input
@@ -121,7 +121,7 @@ const Contact = () => {
 
               {/* EMAIL FIELD: */}
               <div className="flex flex-col space-y-1">
-                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider text-left">
                   Email
                 </label>
                 <input
@@ -135,7 +135,7 @@ const Contact = () => {
 
               {/* PHONE NUMBER FIELD: */}
               <div className="flex flex-col space-y-1">
-                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider text-left">
                   {t("labelPhone")}
                 </label>
                 <input
@@ -149,7 +149,7 @@ const Contact = () => {
 
             {/* MESSAGE FIELD: */}
             <div className="flex flex-col space-y-1">
-              <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+              <label className="text-[10px] sm:text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider text-left">
                 {t("labelMessage")}
               </label>
               <textarea
