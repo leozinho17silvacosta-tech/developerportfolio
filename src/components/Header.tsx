@@ -21,7 +21,7 @@ const Header = () => {
     { code: "en", label: "English" },
   ];
 
-  const handleLanguageChange = (code) => {
+  const handleLanguageChange = (code: string) => {
     i18n.changeLanguage(code);
     setIsLangOpen(false);
     setIsMenuOpen(false);

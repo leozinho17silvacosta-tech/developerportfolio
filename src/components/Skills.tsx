@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 // SKILLS SECTION:
 

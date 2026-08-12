@@ -49,9 +49,9 @@ export default function ScrollToTop() {
             className="h-5 w-5"
           >
             <path
+              strokeWidth={2.5}
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeFill="round"
               d="M4.5 15.75l7.5-7.5 7.5 7.5"
             />
           </svg>
