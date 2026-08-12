@@ -18,7 +18,7 @@ const AiChat = () => {
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const chatEndRef = useRef(null);
+  const chatEndRef = useRef<HTMLDivElement>(null);
 
   // Updates the initial message if the language changes during the session
   useEffect(() => {
@@ -41,7 +41,7 @@ const AiChat = () => {
   }, [messages, loading]);
 
   // Automatic response logic based on keywords (using i18n)
-  const getBotResponse = (userText) => {
+  const getBotResponse = (userText: string) => {
     const text = userText.toLowerCase();
 
     if (
@@ -222,7 +222,7 @@ const AiChat = () => {
     return t("aiChat.responseDefault");
   };
 
-  const handleSendMessage = (messageText) => {
+  const handleSendMessage = (messageText: string) => {
     if (!messageText.trim() || loading) return;
 
     setMessages((prev) => [...prev, { role: "user", content: messageText }]);
@@ -235,7 +235,7 @@ const AiChat = () => {
     }, 600);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || loading) return;
 

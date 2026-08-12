@@ -63,11 +63,11 @@ const Skills = () => {
     setCurrent((prev) => (prev === skills.length - 1 ? 0 : prev + 1));
   };
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: any) => {
     touchStartX.current = e.touches[0].clientX;
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: any) => {
     touchEndX.current = e.touches[0].clientX;
   };
 
